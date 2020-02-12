@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_return"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/ic_launcher_back_foreground"
+        android:text="设置"
+        android:gravity="center_vertical"
+        android:textSize="20sp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="字体大小"-->
+<!--                android:textSize="20sp"-->
+<!--                style="?android:borderlessButtonStyle"-->
+<!--                android:gravity="center_vertical"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_small"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="小"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_medium"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="中"-->
+<!--                android:textSize="20sp"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_big"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="大"-->
+<!--                android:textSize="25dp"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="默认城市"
+                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/ed_moren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="联系我们"
+                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_connection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="帮助"
+                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关于"
+                android:textSize="20sp"
+                style="?android:borderlessButtonStyle"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="10dp"
+                    android:text="当前版本"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="10dp"
+                    android:text="1.1.0"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

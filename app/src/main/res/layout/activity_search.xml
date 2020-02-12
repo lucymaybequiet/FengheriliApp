@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/searchbackgroud"
+    android:padding="10dp"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_return"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="5"
+            android:drawableLeft="@drawable/ic_launcher_back_foreground" />
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="18"
+            android:hint="请输入城市名"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColorHint="#008800" />
+
+        <Button
+            android:id="@+id/btn_search"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="7"
+            android:text="搜索"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_lishi"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/ll_search"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="历史搜索:"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_lishi"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/ll_search"
+        android:layout_toRightOf="@id/tv_lishi"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
